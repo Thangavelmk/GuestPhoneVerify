@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "765599960250",
+    "project_id": "guestphoneverify",
+    "storage_bucket": "guestphoneverify.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:765599960250:android:ee5e5e06b338284200c683",
+        "android_client_info": {
+          "package_name": "com.example.guestphoneverify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZFuCJwFcCoBitaY_sEde7Y0frqILrkTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
