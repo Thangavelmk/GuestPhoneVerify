@@ -1,0 +1,31 @@
+plugins {
+    id 'com.android.application'
+}
+
+// Apply Google Services only after google-services.json is added to app/.
+if (file('google-services.json').exists()) {
+    apply plugin: 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.guestphoneverify'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.example.guestphoneverify'
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName '1.0'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:33.7.0')
+    implementation 'com.google.firebase:firebase-auth'
+}
