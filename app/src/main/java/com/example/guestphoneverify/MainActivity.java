@@ -381,4 +381,15 @@ public class MainActivity extends Activity {
     private int dp(int value) {
         return (int) (value * getResources().getDisplayMetrics().density + 0.5f);
     }
+    
+private static class ApiResult {
+    final JSONObject json;
+    final String error;
+
+    ApiResult(JSONObject json, String error) {
+        this.json = json;
+        this.error = error;
+    }
+}
+
 }
